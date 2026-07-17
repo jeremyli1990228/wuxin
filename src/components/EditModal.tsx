@@ -140,20 +140,22 @@ const EditModal = ({ visible, item, onCancel, onSave }: EditModalProps) => {
             value={selectedNotifications}
             onChange={handleNotificationChange}
           >
-            <div>
+            <div className="space-y-2">
               <div className="flex flex-wrap gap-x-6">
-                {notificationOptions.slice(0, 5).map(opt => (
-                  <Checkbox key={opt.value} value={opt.value}>
-                    {opt.label}
-                  </Checkbox>
-                ))}
+                <Checkbox value="screen">总控大屏</Checkbox>
+                <Checkbox value="security">安防总控</Checkbox>
               </div>
-              <div className="mt-2">
-                {notificationOptions.slice(5).map(opt => (
-                  <Checkbox key={opt.value} value={opt.value}>
-                    {opt.label}
-                  </Checkbox>
-                ))}
+              <div>
+                <Checkbox value="sms">短信</Checkbox>
+              </div>
+              <div>
+                <Checkbox value="ding">钉钉</Checkbox>
+              </div>
+              <div>
+                <Checkbox value="wechat">企微消息通知</Checkbox>
+              </div>
+              <div>
+                <Checkbox value="phone">电话</Checkbox>
               </div>
             </div>
           </Checkbox.Group>
