@@ -140,12 +140,21 @@ const EditModal = ({ visible, item, onCancel, onSave }: EditModalProps) => {
             value={selectedNotifications}
             onChange={handleNotificationChange}
           >
-            <div className="space-y-2">
-              {notificationOptions.map(opt => (
-                <Checkbox key={opt.value} value={opt.value}>
-                  {opt.label}
-                </Checkbox>
-              ))}
+            <div>
+              <div className="flex flex-wrap gap-x-6">
+                {notificationOptions.slice(0, 5).map(opt => (
+                  <Checkbox key={opt.value} value={opt.value}>
+                    {opt.label}
+                  </Checkbox>
+                ))}
+              </div>
+              <div className="mt-2">
+                {notificationOptions.slice(5).map(opt => (
+                  <Checkbox key={opt.value} value={opt.value}>
+                    {opt.label}
+                  </Checkbox>
+                ))}
+              </div>
             </div>
           </Checkbox.Group>
         </Form.Item>
