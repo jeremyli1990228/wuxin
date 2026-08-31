@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/wuxin/static/css/main.0e520342.css",
-    "main.js": "/wuxin/static/js/main.2e512eec.js",
+    "main.js": "/wuxin/static/js/main.49c19ce3.js",
     "static/js/453.fb4f5af6.chunk.js": "/wuxin/static/js/453.fb4f5af6.chunk.js",
     "index.html": "/wuxin/index.html",
     "main.0e520342.css.map": "/wuxin/static/css/main.0e520342.css.map",
-    "main.2e512eec.js.map": "/wuxin/static/js/main.2e512eec.js.map",
+    "main.49c19ce3.js.map": "/wuxin/static/js/main.49c19ce3.js.map",
     "453.fb4f5af6.chunk.js.map": "/wuxin/static/js/453.fb4f5af6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0e520342.css",
-    "static/js/main.2e512eec.js"
+    "static/js/main.49c19ce3.js"
   ]
 }
